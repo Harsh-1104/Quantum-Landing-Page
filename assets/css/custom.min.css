@@ -142,7 +142,7 @@ p {
 }
 
 .bg-overlay-pattern-custom {
-    background-image: url(/assets/SVG/First\ Fold.svg);
+    background-image: url(/assets/SVG/heroBG.svg);
     background-color: transparent;
     background-position: center;
     background-size: cover;
