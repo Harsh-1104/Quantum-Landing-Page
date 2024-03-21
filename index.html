@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
 
     <script src="assets/js/layout.js"></script>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -253,8 +254,8 @@
 
         <section class="section bg-light-custom" id="solution">
             <div class="container">
-                <h1 class="">Solution By Industry</h1>
-                <div class="swiper client-review-swiper rounded mt-5" dir="ltr">
+                <h1>Solution By Industry</h1>
+                <div class="swiper mt-5 mySwiper" dir="ltr">
                     <div class="swiper-wrapper mx-n1">
                         <div class="swiper-slide">
                             <div class="d-flex justify-content-center gap-4">
@@ -357,7 +358,7 @@
             <!-- end container -->
         </section>
 
-        <footer class="custom-footer py-5 position-relative" id="contact">
+        <footer class="custom-footer pt-4 position-relative" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -433,20 +434,21 @@
                 </div>
 
             </div>
+            <div class="container text-center bg-white py-3">
+                <p class="mb-0">
+                    ©
+                    <script> document.write(new Date().getFullYear()) </script>
+                    Quantum IT Solution. All Rights Reserved.
+                </p>
+            </div>
         </footer>
-        <div class="container-fluid text-center bg-white py-3">
-            <p class="mb-0">
-                ©
-                <script> document.write(new Date().getFullYear()) </script>
-                Quantum IT Solution. All Rights Reserved.
-            </p>
-        </div>
 
         <button onclick="topFunction()" class="btn btn-primary btn-icon landing-back-top" id="back-to-top">
             <i class="ri-arrow-up-line text-light"></i>
         </button>
     </div>
 
+    <script src="assets/js/swiper.js"></script>
 
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
@@ -456,6 +458,21 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/pages/landing.init.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
