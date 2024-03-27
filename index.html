@@ -357,8 +357,38 @@
         $(document).ready(() => {
             const FeatherDisplay = async () => {
                 try {
-                    const response = await fetch('assets/json/feature.json');
-                    const data = await response.json();
+                    const data = [
+                        {
+                            "name": "Seamless Integration",
+                            "image": "1 - Integration.svg",
+                            "text": "Quick and easy setup for developers: Integrate our API for secure e-signatures."
+                        },
+                        {
+                            "name": "Workflow Automation",
+                            "image": "2 - Authentication.svg",
+                            "text": "Quick and secure signing, eliminating manual email sending and reducing processing time."
+                        },
+                        {
+                            "name": "Data Security",
+                            "image": "3 - Security.svg",
+                            "text": "Protection against unauthorised access, corruption, and ensuring accuracy and reliability."
+                        },
+                        {
+                            "name": "Tracebility",
+                            "image": "4 - account_tree_FILL1_wght400_GRAD0_opsz40 1.svg",
+                            "text": "It ensures accountability, minimise errors, boosting efficiency and keep documents accessible, accuracy."
+                        },
+                        {
+                            "name": "Authentication",
+                            "image": "5 - Authentication-1.svg",
+                            "text": "It authenticates the signer's identity, which is essential for official papers and contracts."
+                        },
+                        {
+                            "name": "Time stamping",
+                            "image": "6 - Stamping.svg",
+                            "text": "It provides the date and time of a digital signature, crucial for timing-sensitive activities."
+                        }
+                    ];
 
                     let output = ``;
                     for (var i in data) {
@@ -379,8 +409,48 @@
 
             const SolutionDisplay = async (slidePerScreen, width) => {
                 try {
-                    const response = await fetch('assets/json/solution.json');
-                    const data = await response.json();
+                    const data = [
+                        {
+                            "name": "Manufacturing",
+                            "image": "7-Manufacturing Image.svg"
+                        },
+                        {
+                            "name": "Health care",
+                            "image": "3-Health Care image.svg"
+                        },
+                        {
+                            "name": "Academic Institutions",
+                            "image": "10-Academic Institutions.svg"
+                        },
+                        {
+                            "name": "Law & Legal",
+                            "image": "6-Legal Care Image.svg"
+                        },
+                        {
+                            "name": "Financial Services",
+                            "image": "2-Financial Services image.svg"
+                        },
+                        {
+                            "name": "Real Estate",
+                            "image": "8-Real Estate image.svg"
+                        },
+                        {
+                            "name": "IT Solution",
+                            "image": "5-IT Solution Image.svg"
+                        },
+                        {
+                            "name": "Insurance",
+                            "image": "4-Insurance image.svg"
+                        },
+                        {
+                            "name": "Energy",
+                            "image": "1-Energy image.svg"
+                        },
+                        {
+                            "name": "Retail",
+                            "image": "9-Retail Image.svg"
+                        }
+                    ];
 
 
                     function divideArrayIntoSubarrays(array, n) {
