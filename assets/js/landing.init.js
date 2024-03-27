@@ -1,6 +1,6 @@
 function windowScroll() {
     var e = document.getElementById("navbar");
-    e && (50 <= document.body.scrollTop || 50 <= document.documentElement.scrollTop ? e.classList.add("is-sticky") : e.classList.remove("is-sticky"));
+    e && (5 <= document.body.scrollTop || 0 <= document.documentElement.scrollTop ? e.classList.add("is-sticky") : e.classList.remove("is-sticky"));
 }
 window.addEventListener("scroll", function (e) {
     e.preventDefault(), windowScroll();
@@ -68,12 +68,12 @@ function counter() {
 }
 counter();
 var mybutton = document.getElementById("back-to-top");
-function scrollFunction() {
-    100 < document.body.scrollTop || 100 < document.documentElement.scrollTop ? (mybutton.style.display = "block") : (mybutton.style.display = "none");
-}
+// function scrollFunction() {
+//     100 < document.body.scrollTop || 100 < document.documentElement.scrollTop ? (mybutton.style.display = "block") : (mybutton.style.display = "none");
+// }
 function topFunction() {
     (document.body.scrollTop = 0), (document.documentElement.scrollTop = 0);
 }
-window.onscroll = function () {
-    scrollFunction();
-};
+// window.onscroll = function () {
+//     scrollFunction();
+// };

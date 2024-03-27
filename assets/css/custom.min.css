@@ -104,6 +104,23 @@
     color: #2A2A2A;
 }
 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgba(53, 99, 168, 0.7);
+}
+
 h1,
 h2,
 h3,
@@ -114,6 +131,11 @@ p {
     color: #2A2A2A;
     margin: 0;
     padding: 0;
+    line-height: 150% !important;
+}
+
+.fw-secondary-custom {
+    color: #333333;
 }
 
 #hero {
@@ -156,10 +178,6 @@ p {
     transition: all .4s
 }
 
-.rounded-5-custom {
-    border-radius: 16px;
-}
-
 footer {
     background-color: #FBFBFB;
 }
@@ -168,15 +186,27 @@ footer {
     background-color: #FBFBFB !important;
 }
 
-.p-4.border.border-light.border-2.rounded-5-custom {
-    height: 170px;
+.book-demo-btn {
+    height: 40px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.card.custome-card {
-    box-shadow: none;
-    height: 220px;
-    width: 360px;
-    background-color: #FBFBFB;
+.Contact-14Day-trial-demo-btn {
+    height: 45px;
+    width: 216px;
+    color: #F5F5F5;
+}
+
+.Contact-14Day-trial-demo-btn>span {
+    width: 100%;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .btn {
@@ -187,40 +217,163 @@ footer {
     font-size: 16px;
 }
 
-.hero-heading,
 h1 {
     font-size: 36px;
-    font-weight: 500;
 }
 
 h5 {
     font-size: 20px;
-    font-weight: 300;
-}
-
-h5.semibold-custom {
-    font-weight: 500;
 }
 
 h6 {
     font-size: 18px;
-    font-weight: 400;
 }
 
 p {
     font-size: 16px;
-    font-weight: 400;
 }
 
-.hero-heading {
-    font-weight: 600;
-}
-
-.hero-subheading {
-    font-size: 20px;
+.section {
+    padding: 80px 0;
 }
 
 .footer-link li a {
     font-size: 14px;
     font-weight: 400;
+}
+
+.section-heading {
+    margin-bottom: 2.5rem;
+}
+
+.feature-card-custom {
+    height: 240px;
+    width: 360px;
+    padding: 48px 24px;
+    border-radius: 16px;
+}
+
+.feature-card-custom>.fw-secondary-custom {
+    margin-top: 2rem;
+}
+
+.process-card-custom {
+    width: 360px;
+    height: 220px;
+    box-shadow: none;
+    background-color: #FBFBFB;
+    padding: 24px 0;
+    border-radius: 8px;
+    word-break: normal;
+}
+
+.regular-text {
+    font-weight: 400;
+}
+
+.medium-text {
+    font-weight: 500;
+}
+
+.semibold-text {
+    font-weight: 600;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+#contact>.container {
+    padding: 40px 0px;
+}
+
+/* Styles for screens with width <= 375px (phones) */
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    .hero-heading {
+        padding: 0rem 1rem;
+        word-break: keep-all;
+        width: 100% !important;
+    }
+
+    .hero-subheading {
+        font-size: 16px;
+        padding: 0rem 1rem;
+    }
+
+    #hero {
+        height: 450px;
+    }
+
+    .section {
+        padding: 30px 15px;
+    }
+}
+
+/* Styles for screens with width > 375px and <= 576px (phones) */
+@media screen and (min-width: 375px) and (max-width: 576px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 30px 40px;
+    }
+
+    #contact>.container {
+        padding: 30px 40px;
+    }
+}
+
+/* Styles for screens with width > 576px and <= 768px (tablets) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+/* Styles for screens with width > 768px and <= 992px (tablets) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    /* Additional styles for tablets */
+}
+
+/* Styles for screens with width > 992px and <= 1200px (small laptops) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    /* Additional styles for small laptops */
+}
+
+/* Styles for screens with width > 1200px (big laptops and larger screens) */
+@media screen and (min-width: 1201px) {
+    /* Additional styles for big laptops and larger screens */
 }
