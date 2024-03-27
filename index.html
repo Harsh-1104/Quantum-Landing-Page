@@ -357,7 +357,7 @@
         $(document).ready(() => {
             const FeatherDisplay = async () => {
                 try {
-                    const response = await fetch('../assets/json/feature.json');
+                    const response = await fetch('assets/json/feature.json');
                     const data = await response.json();
 
                     let output = ``;
@@ -379,7 +379,7 @@
 
             const SolutionDisplay = async (slidePerScreen, width) => {
                 try {
-                    const response = await fetch('../assets/json/solution.json');
+                    const response = await fetch('assets/json/solution.json');
                     const data = await response.json();
 
 
