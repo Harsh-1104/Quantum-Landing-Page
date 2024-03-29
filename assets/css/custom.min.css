@@ -227,10 +227,12 @@ h5 {
 
 h6 {
     font-size: 18px;
+    text-align: justify;
 }
 
 p {
     font-size: 16px;
+    /* text-align: justify; */
 }
 
 .section {
@@ -243,7 +245,7 @@ p {
 }
 
 .section-heading {
-    margin-bottom: 2.5rem;
+    margin-bottom: 24px;
 }
 
 .feature-card-custom {
@@ -295,6 +297,10 @@ p {
 
     h5 {
         font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
     }
 
     .hero-heading {
@@ -359,7 +365,7 @@ p {
     }
 
     p {
-        font-size: 1px;
+        font-size: 16px;
     }
 }
 
