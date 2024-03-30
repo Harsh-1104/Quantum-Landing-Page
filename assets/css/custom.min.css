@@ -192,6 +192,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #343A3F;
+}
+
+.book-demo-btn:hover {
+    border: 1px solid #343A3F;
+    transition: all .1s;
 }
 
 .Contact-14Day-trial-demo-btn {
@@ -232,7 +238,6 @@ h6 {
 
 p {
     font-size: 16px;
-    /* text-align: justify; */
 }
 
 .section {
@@ -253,6 +258,8 @@ p {
     width: 360px;
     padding: 48px 24px;
     border-radius: 16px;
+    border: 1px solid #E5EAF4;
+    overflow: hidden;
 }
 
 .feature-card-custom>.fw-secondary-custom {
@@ -319,7 +326,32 @@ p {
     }
 
     .section {
-        padding: 30px 15px;
+        padding: 30px 20px;
+    }
+
+    #contact>.container {
+        padding: 30px 20px;
+    }
+
+    #contact>.container>.row>.col-lg-4 {
+        padding: 0;
+    }
+
+    .feature-card-custom {
+        padding: 30px 24px;
+        width: 300px;
+    }
+
+    .feature-card-custom>.fw-secondary-custom {
+        margin-top: 1rem;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .process-card-custom {
+        width: 300px;
     }
 }
 
@@ -347,6 +379,10 @@ p {
 
     #contact>.container {
         padding: 30px 40px;
+    }
+
+    .navbar.navbar-landing {
+        padding: 10px 40px !important;
     }
 }
 
