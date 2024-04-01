@@ -339,7 +339,7 @@ p {
 
     .feature-card-custom {
         padding: 30px 24px;
-        width: 300px;
+        width: 330px;
     }
 
     .feature-card-custom>.fw-secondary-custom {
@@ -351,12 +351,16 @@ p {
     }
 
     .process-card-custom {
-        width: 300px;
+        width: 330px;
+    }
+
+    .navbar.navbar-landing {
+        padding: 10px 20px !important;
     }
 }
 
 /* Styles for screens with width > 375px and <= 576px (phones) */
-@media screen and (min-width: 375px) and (max-width: 576px) {
+@media screen and (min-width: 375px) and (max-width: 425px) {
     h1 {
         font-size: 22px;
     }
@@ -382,12 +386,12 @@ p {
     }
 
     .navbar.navbar-landing {
-        padding: 10px 40px !important;
+        padding: 10px 30px !important;
     }
 }
 
 /* Styles for screens with width > 576px and <= 768px (tablets) */
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
     h1 {
         font-size: 24px;
     }
@@ -403,16 +407,39 @@ p {
     p {
         font-size: 16px;
     }
+
+    .feature-card-custom,
+    .process-card-custom {
+        width: 340px;
+    }
 }
 
 /* Styles for screens with width > 768px and <= 992px (tablets) */
 @media screen and (min-width: 769px) and (max-width: 992px) {
+
+    h5 {
+        font-size: 18px;
+    }
+
     /* Additional styles for tablets */
+    .feature-card-custom,
+    .process-card-custom {
+        width: 340px;
+    }
 }
 
 /* Styles for screens with width > 992px and <= 1200px (small laptops) */
 @media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    h5 {
+        font-size: 18px;
+    }
+
     /* Additional styles for small laptops */
+    .feature-card-custom,
+    .process-card-custom {
+        width: 300px;
+    }
 }
 
 /* Styles for screens with width > 1200px (big laptops and larger screens) */

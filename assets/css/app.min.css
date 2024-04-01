@@ -17693,14 +17693,14 @@ span.flatpickr-weekday {
     transition: all .5s ease
 }
 
-@media (max-width:991.98px) {
+/* @media (max-width:991.98px) {
     .navbar-landing {
         background-color: var(--vz-card-bg-custom);
         -webkit-box-shadow: 0 1px 16px -2px rgba(56, 65, 74, .15);
         box-shadow: 0 1px 16px -2px rgba(56, 65, 74, .15);
         padding: 10px 8px
     }
-}
+} */
 
 .navbar-landing .navbar-nav .nav-item .nav-link {
     font-size: 16px;

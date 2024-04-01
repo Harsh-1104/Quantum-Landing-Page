@@ -25,17 +25,17 @@ navLinks &&
   (window.addEventListener("load", function () {
     window.dispatchEvent(new Event("resize"));
   }),
-  window.addEventListener("resize", function () {
-    var e = document.documentElement.clientWidth;
-    (bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: !1 })),
-      e < 980
-        ? Array.from(navLinks).forEach((e) => {
+    window.addEventListener("resize", function () {
+      var e = document.documentElement.clientWidth;
+      (bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: !1 })),
+        e < 980
+          ? Array.from(navLinks).forEach((e) => {
             e.addEventListener("click", () => {
               toggleMenu();
             });
           })
-        : toggleMenu();
-  }));
+          : toggleMenu();
+    }));
 
 var swiper = new Swiper(".trusted-client-slider", {
   spaceBetween: 50,
